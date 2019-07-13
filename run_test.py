@@ -8,6 +8,8 @@ class TestRun(unittest.TestCase):
       self.assertEqual(2, run.execute(1))
     def test_execute_minus(self):
       self.assertEqual(0, run.execute(-1))
+    def test_execute_minus(self):
+      self.assertEqual(0, run.execute(''))
 
 if __name__ == '__main__':
     unittest.main()
